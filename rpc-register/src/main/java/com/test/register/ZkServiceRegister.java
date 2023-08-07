@@ -75,6 +75,7 @@ public class ZkServiceRegister implements ServiceRegister {
                 ":" +
                 serverAddress.getPort();
     }
+
     // 字符串解析为地址
     private InetSocketAddress parseAddress(String address) {
         String[] result = address.split(":");
