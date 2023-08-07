@@ -71,7 +71,7 @@ public class ZkServiceRegister implements ServiceRegister {
 
     // 地址 -> XXX.XXX.XXX.XXX:port 字符串
     private String getServiceAddress(InetSocketAddress serverAddress) {
-        return serverAddress.getHostName() +
+        return serverAddress.getHostString() +
                 ":" +
                 serverAddress.getPort();
     }
